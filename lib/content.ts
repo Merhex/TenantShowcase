@@ -136,12 +136,8 @@ export interface Content {
 // Contact details — edit these to your real details before sharing.
 // ---------------------------------------------------------------------------
 const CONTACT = {
-  phone: "+370 600 00000",
-  phoneHref: "tel:+37060000000",
-  whatsapp: "+370 600 00000",
-  whatsappHref: "https://wa.me/37060000000",
   imessage: "axel@example.com",
-  imessageHref: "sms:+37060000000",
+  imessageHref: "imessage:axel@example.com",
   linkedin: "linkedin.com/in/axel",
   linkedinHref: "https://www.linkedin.com/in/axel",
 };
@@ -380,18 +376,6 @@ export const content: Record<Locale, Content> = {
       reveal: "Spustelėkite, kad pamatytumėte kontaktus",
       note: "Kontaktai paslėpti, kad būtų išvengta brukalo. Rekomendacijos ir dokumentai pateikiami paprašius.",
       links: [
-        {
-          type: "phone",
-          label: "Telefonas",
-          value: CONTACT.phone,
-          href: CONTACT.phoneHref,
-        },
-        {
-          type: "whatsapp",
-          label: "WhatsApp",
-          value: CONTACT.whatsapp,
-          href: CONTACT.whatsappHref,
-        },
         {
           type: "imessage",
           label: "iMessage",
@@ -654,18 +638,6 @@ export const content: Record<Locale, Content> = {
       reveal: "Click to reveal contact details",
       note: "Details are hidden to reduce spam. References and documentation are available on request.",
       links: [
-        {
-          type: "phone",
-          label: "Phone",
-          value: CONTACT.phone,
-          href: CONTACT.phoneHref,
-        },
-        {
-          type: "whatsapp",
-          label: "WhatsApp",
-          value: CONTACT.whatsapp,
-          href: CONTACT.whatsappHref,
-        },
         {
           type: "imessage",
           label: "iMessage",
