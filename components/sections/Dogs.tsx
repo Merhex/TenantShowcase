@@ -8,8 +8,8 @@ import { Photo } from "@/components/ui/Photo";
 
 // Real photos keyed by dog name (names are the same in both locales).
 const dogPhotos: Record<string, string | undefined> = {
+  Raava: "/images/raava.jpg",
   Goldas: "/images/goldas.jpg",
-  // Raava: "/images/raava.jpg", // add when available
 };
 
 export function Dogs() {
