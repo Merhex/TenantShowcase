@@ -34,7 +34,7 @@ export interface FaqItem {
 }
 
 export interface ContactLink {
-  type: "phone" | "whatsapp" | "imessage" | "linkedin";
+  type: "email" | "linkedin";
   label: string;
   value: string;
   href: string;
@@ -136,10 +136,10 @@ export interface Content {
 // Contact details — edit these to your real details before sharing.
 // ---------------------------------------------------------------------------
 const CONTACT = {
-  imessage: "axel@example.com",
-  imessageHref: "imessage:axel@example.com",
-  linkedin: "linkedin.com/in/axel",
-  linkedinHref: "https://www.linkedin.com/in/axel",
+  email: "breekweg.axel.mid@gmail.com",
+  emailHref: "mailto:breekweg.axel.mid@gmail.com",
+  linkedin: "linkedin.com/in/axelbreekweg",
+  linkedinHref: "https://www.linkedin.com/in/axelbreekweg",
 };
 
 export const content: Record<Locale, Content> = {
@@ -377,10 +377,10 @@ export const content: Record<Locale, Content> = {
       note: "Kontaktai paslėpti, kad būtų išvengta brukalo. Rekomendacijos ir dokumentai pateikiami paprašius.",
       links: [
         {
-          type: "imessage",
-          label: "iMessage",
-          value: CONTACT.imessage,
-          href: CONTACT.imessageHref,
+          type: "email",
+          label: "El. paštas",
+          value: CONTACT.email,
+          href: CONTACT.emailHref,
         },
         {
           type: "linkedin",
@@ -639,10 +639,10 @@ export const content: Record<Locale, Content> = {
       note: "Details are hidden to reduce spam. References and documentation are available on request.",
       links: [
         {
-          type: "imessage",
-          label: "iMessage",
-          value: CONTACT.imessage,
-          href: CONTACT.imessageHref,
+          type: "email",
+          label: "Email",
+          value: CONTACT.email,
+          href: CONTACT.emailHref,
         },
         {
           type: "linkedin",
