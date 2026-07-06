@@ -44,8 +44,8 @@ jobs:
       - name: Build static site
         run: npm run build
         env:
-          # Served from https://<user>.github.io/TenantShowcase/
-          NEXT_PUBLIC_BASE_PATH: /TenantShowcase
+          # Served from https://<user>.github.io/axelbreekweg/
+          NEXT_PUBLIC_BASE_PATH: /axelbreekweg
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
