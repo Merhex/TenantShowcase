@@ -23,6 +23,12 @@ import {
   Wrench,
   Mail,
   Linkedin,
+  FileText,
+  CalendarCheck,
+  CalendarDays,
+  Clock,
+  Syringe,
+  ScanLine,
   type LucideIcon,
 } from "lucide-react";
 
@@ -52,6 +58,12 @@ const map: Record<string, LucideIcon> = {
   wrench: Wrench,
   email: Mail,
   linkedin: Linkedin,
+  "file-text": FileText,
+  "calendar-check": CalendarCheck,
+  "calendar-days": CalendarDays,
+  clock: Clock,
+  syringe: Syringe,
+  "scan-line": ScanLine,
 };
 
 export function Icon({
