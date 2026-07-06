@@ -80,6 +80,15 @@ export interface Content {
     reason: string;
     body: string[];
   };
+  finance: {
+    heading: string;
+    subheading: string;
+    points: { icon: string; title: string; desc: string }[];
+  };
+  availability: {
+    heading: string;
+    items: { icon: string; label: string }[];
+  };
   dogs: {
     heading: string;
     subheading: string;
@@ -231,6 +240,45 @@ export const content: Record<Locale, Content> = {
         "Kadangi jau turiu nuosavą būstą, prieš priimdamas didesnį sprendimą noriu ramiai pagyventi Vilniuje ir pažinti miestą. Todėl esu patikimas, ilgalaikei nuomai nusiteikęs nuomininkas — ne skubantis ir ne neapsisprendęs.",
       ],
     },
+    finance: {
+      heading: "Finansinis patikimumas",
+      subheading: "Aiškumas dėl svarbiausio klausimo — nuomos mokėjimo.",
+      points: [
+        {
+          icon: "briefcase",
+          title: "Stabilus, ilgalaikis darbas",
+          desc: "4,5 metų „Edenred“ — tvirtos ir reguliarios pajamos.",
+        },
+        {
+          icon: "home",
+          title: "Turiu nuosavą būstą",
+          desc: "Nuosavas būstas Šiauliuose — finansinis pagrindas ir atsakomybė.",
+        },
+        {
+          icon: "wallet",
+          title: "Nuoma iš anksto",
+          desc: "Galiu sumokėti 2–3 mėnesių nuomą iš anksto (aptartina).",
+        },
+        {
+          icon: "shield-check",
+          title: "Didesnis užstatas",
+          desc: "Pasiruošęs padidinti užstatą papildomam jūsų saugumui.",
+        },
+        {
+          icon: "file-text",
+          title: "Dokumentai paruošti",
+          desc: "Darbo sutartį ir pajamų įrodymą pateiksiu paprašius.",
+        },
+      ],
+    },
+    availability: {
+      heading: "Pasiruošęs, kai tik jums patogu",
+      items: [
+        { icon: "calendar-check", label: "Galima įsikelti iš karto" },
+        { icon: "calendar-days", label: "Ieškau ilgalaikės nuomos (12+ mėn.)" },
+        { icon: "clock", label: "Lankstus dėl apžiūros laiko" },
+      ],
+    },
     dogs: {
       heading: "Susipažinkite su mano šunimis",
       subheading:
@@ -246,6 +294,8 @@ export const content: Record<Locale, Content> = {
             "Gerai išdresuota",
             "Tyli",
             "Draugiška",
+            "Skiepyta",
+            "Su mikroschema",
           ],
           blurb:
             "Raavą auginu nuo mažens. Nepaisant įspūdingo dydžio, ji nepaprastai rami ir švelni — dauguma laiko ilsisi savo vietoje. Su žmonėmis ir kitais šunimis elgiasi draugiškai ir nekelia triukšmo.",
@@ -259,6 +309,8 @@ export const content: Record<Locale, Content> = {
             "Patirtis gyvenant bute",
             "Gerai išdresuotas",
             "Draugiškas",
+            "Skiepytas",
+            "Su mikroschema",
           ],
           blurb:
             "Goldas — švelnaus būdo labradoras, kurį auginu nuo šuniuko. Per aštuonerius metus jis tapo ramiu ir subalansuotu kompanionu, puikiai jaučiasi bute ir mielai sutinka kiekvieną.",
@@ -494,6 +546,45 @@ export const content: Record<Locale, Content> = {
         "Because I already own property, I'd like to spend some calm time living in Vilnius and getting to know the city before making a larger commitment. That makes me a reliable, long-term-minded tenant — not someone in a rush or unsure of their plans.",
       ],
     },
+    finance: {
+      heading: "Financial peace of mind",
+      subheading: "Clarity on the question that matters most — paying the rent.",
+      points: [
+        {
+          icon: "briefcase",
+          title: "Stable, long-term job",
+          desc: "4.5 years at Edenred — steady, dependable income.",
+        },
+        {
+          icon: "home",
+          title: "I own my home",
+          desc: "My own property in Šiauliai — a solid financial footing.",
+        },
+        {
+          icon: "wallet",
+          title: "Rent in advance",
+          desc: "Happy to pay 2–3 months of rent up front (open to discuss).",
+        },
+        {
+          icon: "shield-check",
+          title: "Higher deposit",
+          desc: "Ready to increase the security deposit for extra peace of mind.",
+        },
+        {
+          icon: "file-text",
+          title: "Documents ready",
+          desc: "Employment contract and proof of income available on request.",
+        },
+      ],
+    },
+    availability: {
+      heading: "Ready whenever suits you",
+      items: [
+        { icon: "calendar-check", label: "Available to move in immediately" },
+        { icon: "calendar-days", label: "Looking for a 12+ month lease" },
+        { icon: "clock", label: "Flexible on viewing times" },
+      ],
+    },
     dogs: {
       heading: "Meet My Dogs",
       subheading:
@@ -509,6 +600,8 @@ export const content: Record<Locale, Content> = {
             "Well trained",
             "Quiet",
             "Friendly",
+            "Vaccinated",
+            "Microchipped",
           ],
           blurb:
             "I've raised Raava since she was a puppy. Despite her impressive size, she is remarkably calm and gentle — she spends most of the day resting in her spot. She's friendly with people and other dogs, and never makes noise.",
@@ -522,6 +615,8 @@ export const content: Record<Locale, Content> = {
             "Apartment experience",
             "Well trained",
             "Friendly",
+            "Vaccinated",
+            "Microchipped",
           ],
           blurb:
             "Goldas is a gentle-natured Labrador I've raised from a puppy. Over eight years he's grown into a calm, well-balanced companion who feels completely at home in an apartment and greets everyone warmly.",
