@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { Lock, ArrowUpRight } from "lucide-react";
+import { Lock, ArrowUpRight, Download } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
@@ -10,8 +10,10 @@ import { ActionButton } from "@/components/ui/Button";
 import { Icon } from "@/lib/icons";
 import { QrCode } from "@/components/QrCode";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export function Contact() {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const [revealed, setRevealed] = useState(false);
   const reduce = useReducedMotion();
 
@@ -93,6 +95,15 @@ export function Contact() {
               )}
             </AnimatePresence>
           </div>
+
+          <a
+            href={`${BASE_PATH}/axel-tenant-profile-${locale}.pdf`}
+            download
+            className="mt-5 inline-flex items-center gap-2 rounded text-sm font-medium text-forest underline-offset-4 transition hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest"
+          >
+            <Download className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+            {t.contact.download}
+          </a>
         </Reveal>
 
         <Reveal delay={0.08}>

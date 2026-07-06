@@ -124,6 +124,7 @@ export interface Content {
     heading: string;
     prompt: string;
     reveal: string;
+    download: string;
     note: string;
     links: ContactLink[];
   };
@@ -428,6 +429,7 @@ export const content: Record<Locale, Content> = {
       heading: "Susisiekime",
       prompt: "Norėtumėte išnuomoti man būstą?",
       reveal: "Spustelėkite, kad pamatytumėte kontaktus",
+      download: "Atsisiųsti nuomininko profilį (PDF)",
       note: "Kontaktai paslėpti, kad būtų išvengta brukalo. Reikiami dokumentai pateikiami paprašius.",
       links: [
         {
@@ -734,6 +736,7 @@ export const content: Record<Locale, Content> = {
       heading: "Let's talk",
       prompt: "Interested in renting to me?",
       reveal: "Click to reveal contact details",
+      download: "Download tenant profile (PDF)",
       note: "Details are hidden to reduce spam. Documentation is available on request.",
       links: [
         {
