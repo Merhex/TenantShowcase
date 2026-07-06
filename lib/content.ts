@@ -56,6 +56,7 @@ export interface Content {
     ctaSecondary: string;
     photoLabel: string;
   };
+  stats: { value?: string; icon?: string; label: string }[];
   trust: {
     heading: string;
     subheading: string;
@@ -163,6 +164,12 @@ export const content: Record<Locale, Content> = {
       ctaSecondary: "Susipažinkite su šunimis",
       photoLabel: "Axel su Raava ir Goldas",
     },
+    stats: [
+      { value: "4,5 m.", label: "„Edenred“ komandoje" },
+      { value: "7+ m.", label: "Karinė tarnyba" },
+      { value: "2", label: "Ramūs, išdresuoti šunys" },
+      { icon: "home", label: "Nuosavas būstas" },
+    ],
     trust: {
       heading: "Trumpai apie mane",
       subheading: "Keletas dalykų, kurie svarbūs nuomotojui.",
@@ -420,6 +427,12 @@ export const content: Record<Locale, Content> = {
       ctaSecondary: "Meet My Dogs",
       photoLabel: "Axel with Raava & Goldas",
     },
+    stats: [
+      { value: "4.5 yrs", label: "at Edenred" },
+      { value: "7+ yrs", label: "Military service" },
+      { value: "2", label: "Calm, well-trained dogs" },
+      { icon: "home", label: "Homeowner" },
+    ],
     trust: {
       heading: "A quick snapshot",
       subheading: "A few things that matter to a landlord.",

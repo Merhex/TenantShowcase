@@ -4,6 +4,7 @@ import { useI18n } from "@/lib/i18n";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/sections/Hero";
+import { StatBar } from "@/components/sections/StatBar";
 import { TrustSnapshot } from "@/components/sections/TrustSnapshot";
 import { About } from "@/components/sections/About";
 import { WhyMoving } from "@/components/sections/WhyMoving";
@@ -23,6 +24,8 @@ export default function Home() {
       <main>
         {/* 1 — Who is this person? */}
         <Hero />
+        {/* At-a-glance credibility */}
+        <StatBar />
         {/* 2 — Can I trust him? */}
         <TrustSnapshot />
         {/* About / values */}
