@@ -1,9 +1,11 @@
 name: Deploy to GitHub Pages
 
 on:
+  # Only publish from the default branch (Pages deploys are restricted to it
+  # anyway, so branch pushes would just fail). Use "Run workflow" for manual
+  # deploys.
   push:
     branches:
-      - claude/tenant-profile-website-rdw1uc
       - main
   workflow_dispatch:
 
